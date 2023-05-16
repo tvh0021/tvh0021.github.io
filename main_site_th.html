@@ -38,7 +38,7 @@
   /* First image (Logo. Full height) */
   .bgimg-1 {
     background-image: url("background/DSC09645.png");
-    min-height: 1000px;
+    min-height: 1200px;
   }
 
   /* Second image (CV) */
@@ -111,7 +111,7 @@
   <div class="bgimg-1 w3-display-container " id="home">
     <div class="w3-display-middle" style="text-align:center; padding:20px">
       <span class="w3-center w3-xxxlarge w3-wide w3-animate-opacity w3-text-white"> TRUNG HA </span> <br>
-      <span class="w3-center w3-xxlarge w3-animate-opacity">PhD. Student <br>University of North Texas </span>
+      <span class="w3-center w3-xxlarge w3-animate-opacity">Astronomy PhD. Student <br>University of North Texas</span>
       <div class="w3-xlarge w3-section w3-wide">
         <a href="https://orcid.org/0000-0001-6600-2517" class="w3-hover-opacity" target="_blank">
           <img alt="ORCID logo" src="orcid_logo.png" width="30" height="30"></a>
@@ -126,10 +126,10 @@
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64 w3-large" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
-    <p>I am a third-year Physics PhD. student at the University of North Texas. My current research focuses primarily on
-      computer simulations of accretion onto supermassive black holes at the center of cool-core galaxy clusters. My
-      PhD. advisor is Dr. <a href="http://physics.unt.edu/~yl0657/" class="w3-text-blue" onclick="toggleFunction()">Yuan
-        Li</a>.</p>
+    <p>I am a fourth-year graduate student in physics at the University of North Texas. My Ph.D. thesis focuses on
+      computer simulations of multiphase accretion onto supermassive black holes at the center of cool-core galaxy
+      clusters. <br> My PhD. advisor is Dr. <a href="http://physics.unt.edu/~yl0657/" class="w3-text-blue"
+        onclick="toggleFunction()">Yuan Li</a>.</p>
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-padding-large">
         <!-- <p><b><i class="fa fa-user w3-margin-right"></i>Trung Ha</b></p><br> -->
@@ -139,16 +139,19 @@
 
       <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <p>Additionally, I am continuing my research in <a href="#Gaia" class="w3-text-blue"
-            onclick="toggleFunction()">examining the kinematics of stars and gas in molecular cloud complexes</a>, where
-          the cold dense gas collapses to form stars. Further details about my past and present research can be found in
+        <p>Starting from September 2023, I will be a research analyst at the <a
+            href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/" class="w3-text-blue"
+            onclick="toggleFunction()">Center for Computational Astrophysics - Simons
+            Foundation</a>. At the CCA, I plan to conduct research on applying computer vision techniques to segment
+          turbulent structures from plasma simulations. Further details about my past and current research can be found
+          in
           the <a href="#research" class="w3-text-blue" onclick="toggleFunction()">Research</a> section.</p>
         <p>Outside of research, I enjoy traveling, building computers, and solving Rubik's cubes. I also do landscape
-          photography, and on the rare occasions with ideal condition, astrophotography. Consequently, images on this
+          photography, and on the rare occasions, astrophotography. Consequently, images appear as backgrounds on this
           website were taken by me.</p>
       </div>
     </div>
-    <p>I grew up in Ho Chi Minh city, Vietnam, before moving to the US as a cultural exchange student in 2014. After
+    <p>I grew up in Ho Chi Minh city, Vietnam, before moving to the U.S. as a cultural exchange student in 2014. After
       high school, I obtained an A.S. from Central Arizona College in 2017. I then graduated with a B.S. in Physics at
       the University of Rochester in 2020, and an M.S. in Physics at the University of North Texas in 2022.</p>
   </div>
@@ -156,19 +159,19 @@
   <!-- Second Parallax Image with CV Text -->
   <div class="bgimg-2 w3-display-container">
     <div class="w3-display-middle">
-      <span class="w3-xxlarge w3-text-white w3-blue-grey w3-padding-medium w3-wide"> CURRICULUM VITAE</span>
+      <span class="w3-xxxlarge w3-text-white w3-blue-grey w3-padding-medium w3-wide"> CURRICULUM VITAE</span>
     </div>
   </div>
 
   <!-- Container (CV Section) -->
   <div class="w3-content w3-container w3-padding-64 w3-center" id="cv">
-    <iframe src="CV_1222_TVH.pdf" width="100%" height="800px"></iframe>
+    <iframe src="CV_0523_TVH.pdf" width="100%" height="800px"></iframe>
   </div>
 
   <!-- Third Parallax Image with Research Text -->
   <div class="bgimg-3 w3-display-container">
     <div class="w3-display-middle">
-      <span class="w3-xxlarge w3-text-white w3-blue-grey w3-padding-medium w3-wide"> RESEARCH</span>
+      <span class="w3-xxxlarge w3-text-white w3-blue-grey w3-padding-medium w3-wide"> RESEARCH</span>
     </div>
   </div>
 
@@ -176,18 +179,32 @@
   <div class="w3-content w3-container w3-padding-64" id="research">
     <p class="w3-center w3-large"><em> My research projects in reverse chronological order.<br> Click on the images to
         make them bigger</em></p><br>
-    <!--
-    <p class="w3-center w3-xlarge" id="Sims">Simulations of Accretion on Supermassive Black Holes</p>
+    <p class="w3-center w3-xlarge" id="Sims">Meso-scale Simulations of Multiphase Accretion Flows onto Supermassive
+      Black Holes </p>
     <div class="w3-row-padding w3-left-align w3-large">
       <div class="w3-third w3-padding-top-64">
-        <img src="research/Virgo_adj.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-          alt="An early result of our simulation, showing a region centered around M87"><br>
+        <img src="research/jetsim.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="An early result of my simulation, showing a number density slice plot of width 1.8 kpc. Streamlines show direction of gas motion. Turbulent, multiphase gas can be seen forming near the inner region, while bipolar jets provide turbulent heating of the surrounding environment."><br>
       </div>
       <div class="w3-twothird">
-        <p> </p>
+        <p> Current state-of-the-art numerical simulations of supermassive black holes at the center of galaxies
+          are largely successful at recreating the accretion flows observed via telescopes, especially on the
+          galaxy-scale (~0.1 to hundreds of kpc) and the event-horizon-scale (~10^-2 pc). However, our
+          current theoretical understanding of the accretion flow between the Bondi radius and the outer edge of the
+          accretion disk (the meso-scale) lags behind observations. My Ph.D. thesis aims to provide theoretical
+          explanations for the observed meso-scale accretion flows. To this end, I am designing galaxy-scale MHD
+          simulations of the accretion flow and relativistic jet feedback motivated by
+          observations of the elliptical galaxy M87 using the adaptive mesh-refinement code <a
+            href="https://www.athena-astro.app/" onclick="toggleFunction()" class="w3-text-blue">Athena++</a>. Then,
+          through a
+          recently developed nested zoom-in technique, I plan to construct meso-scale simulations of the same system to
+          provide boundary and initial conditions at the horizon-scale for future GRMHD simulations
+          of the accretion disk. <br> This project is carried out under
+          supervision from Dr. <a href="http://physics.unt.edu/~yl0657/" onclick="toggleFunction()"
+            class="w3-text-blue">Yuan Li</a> of UNT.</p>
       </div>
     </div>
--->
+
 
     <p class="w3-center w3-xlarge" id="Gaia">Measuring Turbulence in the Interstellar Medium with Young Stars</p>
     <div class="w3-row-padding w3-left-align w3-large">
@@ -203,12 +220,12 @@
             class="w3-text-blue">APOGEE-2</a>, we calculate the velocity structure function of stars in four nearby
           star-forming regions and compare them to the structure functions found in H&alpha; and CO gas. <br> In our <a
             href="https://iopscience.iop.org/article/10.3847/1538-4357/ac76bf" onclick="toggleFunction()"
-            class="w3-text-blue">recently published paper</a>, we found that the structure functions of the four
+            class="w3-text-blue">2022 paper</a>, we found that the structure functions of the four
           star-forming regions in the Solar neighborhood shows a universal scaling of turbulence when traced by young
           stars. We also found evidence of local supernova energy injection in Orion and Ophiuchus, which is supported
-          by observational studies. <br> This work is a follow-up to <a
+          by observational studies. <br> This work is a follow-up to our <a
             href="https://iopscience.iop.org/article/10.3847/2041-8213/abd8c9" onclick="toggleFunction()"
-            class="w3-text-blue">our previous paper</a>, which investigates young stars in the Orion Complex
+            class="w3-text-blue">2021 paper</a>, which investigates young stars in the Orion Complex
           specifically. <br>Read our
           press release <a href="https://research.unt.edu/news/discovering-new-way-look-turbulence-galaxy"
             onclick="toggleFunction()" class="w3-text-blue">here</a>. Watch our interview for the American Astronomical
@@ -234,8 +251,8 @@
           project proposes a new way of looking at WLQs not as a disjoint subset of quasars but rather as quasars that
           lie preferentially towards the extreme end of the <a
             href="https://ui.adsabs.harvard.edu/abs/2022ApJ...931..154R/abstract" class="w3-text-blue"
-            onclick="toggleFunction()">C &#8547; || Distance</a> parameter space. This work has been submitted for
-          peer-review and will be published in ApJ in 2023.<br>This project was carried out under
+            onclick="toggleFunction()">C &#8547; || Distance</a> parameter space. This work has been accepted for
+          publication in ApJ and is currently in the final proof stage.<br>This project was carried out under
           supervision from Dr. <a href="http://www.phys.unt.edu/~ohad/" class="w3-text-blue"
             onclick="toggleFunction()">Ohad
             Shemmer</a> of UNT.</p>
@@ -309,7 +326,7 @@
   <!-- Third Parallax Image with Contact Text -->
   <div class="bgimg-4 w3-display-container">
     <div class="w3-display-middle">
-      <span class="w3-xxlarge w3-text-white w3-padding-medium w3-blue-grey w3-wide"> CONTACT</span>
+      <span class="w3-xxxlarge w3-text-white w3-padding-medium w3-blue-grey w3-wide"> CONTACT</span>
     </div>
   </div>
 

@@ -111,8 +111,7 @@
   <div class="bgimg-1 w3-display-container " id="home">
     <div class="w3-display-middle" style="text-align:center; padding:20px">
       <span class="w3-center w3-xxxlarge w3-wide w3-animate-opacity w3-text-white"> TRUNG HA </span> <br>
-      <span class="w3-center w3-xlarge w3-animate-opacity">Research Analyst, Simons Foundation <br>Physics PhD.
-        Student, University of North Texas</span>
+      <span class="w3-center w3-xlarge w3-animate-opacity">Physics PhD. Student, University of North Texas</span>
       <div class="w3-xlarge w3-section w3-wide">
         <a href="https://orcid.org/0000-0001-6600-2517" class="w3-hover-opacity" target="_blank">
           <img alt="ORCID logo" src="orcid_logo.png" width="30" height="30"></a>
@@ -127,11 +126,11 @@
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64 w3-large" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
-    <p>I am currently a Pre-Doctoral Fellow at the Simons Foundation's <a
-        href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/" class="w3-text-blue"
-        onclick="toggleFunction()">Center for Computational Astrophysics</a> in New York City. I am working with
-      my mentors to automate detection and analysis of current sheets in turbulent plasma simulations.</p>
-    <div class="w3-row">
+    <p>I am a fourth-year physics graduate student at the University of North Texas working with Dr. <a href="http://physics.unt.edu/~yl0657/" class="w3-text-blue"
+      onclick="toggleFunction()">Yuan Li</a>. My Ph.D. thesis focuses on computer simulations of the feeding and feedback cycle from supermassive black holes at the center of massive elliptical galaxies. I was also a Pre-Doctoral Fellow at the Flatiron Institute <a
+      href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/" class="w3-text-blue"
+      onclick="toggleFunction()">Center for Computational Astrophysics</a> during Fall 2023, developing machine learning techniques to automatically segment current sheet structures in magnetized plasma turbulence simulations. I have since continued working on this project as a guest researcher. Further details about my past and current research can be found in the <a href="#research" class="w3-text-blue" onclick="toggleFunction()">Research</a> section.
+    </p>
       <div class="w3-col m6 w3-center w3-padding-large">
         <!-- <p><b><i class="fa fa-user w3-margin-right"></i>Trung Ha</b></p><br> -->
         <img src="pfp.jpeg" class="w3-round w3-image w3-opacity-off w3-hover-opacity-off" alt="Photo of Trung Ha"
@@ -140,19 +139,15 @@
 
       <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <p>I am a fourth-year graduate student in physics at the University of North Texas. My Ph.D. thesis focuses on
-          computer simulations of multiphase accretion onto supermassive black holes at the center of cool-core galaxy
-          clusters. My PhD. advisor is Dr. <a href="http://physics.unt.edu/~yl0657/" class="w3-text-blue"
-            onclick="toggleFunction()">Yuan Li</a>. Further details about my past and current research can be found in
-          the <a href="#research" class="w3-text-blue" onclick="toggleFunction()">Research</a> section.</p>
-        <p>Outside of research, I enjoy traveling, building computers, and solving Rubik's cubes. I also do landscape
-          photography, and on the rare occasions, astrophotography. Consequently, images appear as backgrounds on this
-          website were taken by me.</p>
+        <p>
+          I grew up in Ho Chi Minh city, Vietnam, before moving to the U.S. as a cultural exchange student in 2014. After high school, I obtained an A.S. from Central Arizona College in 2017. I then graduated with a B.S. in Physics from the University of Rochester in 2020, and an M.S. in Physics from the University of North Texas in 2022.
+        </p>
+        <p>
+          Outside of research, I enjoy traveling, building computers, and solving Rubik's cubes. I also do landscape photography, and on the rare occasions, astrophotography. Consequently, images appear as backgrounds on this website were taken by me.
+        </p>
       </div>
     </div>
-    <p>I grew up in Ho Chi Minh city, Vietnam, before moving to the U.S. as a cultural exchange student in 2014. After
-      high school, I obtained an A.S. from Central Arizona College in 2017. I then graduated with a B.S. in Physics at
-      the University of Rochester in 2020, and an M.S. in Physics at the University of North Texas in 2022.</p>
+    
   </div>
 
   <!-- Second Parallax Image with CV Text -->
@@ -164,22 +159,38 @@
 
   <!-- Container (CV Section) -->
   <div class="w3-content w3-container w3-padding-64 w3-center" id="cv">
-    <iframe src="CV_1223_TVH.pdf" width="100%" height="800px"></iframe>
+    <iframe src="CV_0324_TVH.pdf" width="100%" height="800px"></iframe>
   </div>
 
   <!-- Third Parallax Image with Research Text -->
   <div class="bgimg-3 w3-display-container">
     <div class="w3-display-middle">
-      <span class="w3-xxxlarge w3-text-white w3-blue-grey w3-padding-medium w3-wide"> RESEARCH</span>
+      <span class="w3-xxxlarge w3-text-white w3-blue-grey w3-padding-medium w3-wide">RESEARCH</span>
     </div>
   </div>
 
   <!-- Container (Research Section) -->
   <div class="w3-content w3-container w3-padding-64" id="research">
-    <p class="w3-center w3-large"><em> My research projects in reverse chronological order.<br> Click on the images to
-        make them bigger</em></p><br>
+    <p class="w3-center w3-large"><em> My research projects in reverse chronological order.<br> Projects indicated by "(current)" are those I am actively working on.<br> Click on the images for more details.</em></p><br>
+
+    <p class="w3-center w3-xlarge" id="Sims">Segmentation of Current Sheets in Magnetized Plasma Turbulence with Computer Vision (current)</p>
+    <div class="w3-row-padding w3-left-align w3-large">
+      <div class="w3-third w3-padding-top-64">
+        <img src="research/aweSOM.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="(Preliminary result) Volume rendering of a Harris current sheet simulation. In yellow is the aweSOM-detected current sheet. In blue and red is the current density J parallel to the magnetic field, with a threshold of twice the root-mean-squared J. The two regions match up to 90%."><br>
+      </div>
+      <div class="w3-twothird">
+        <p>
+           Magnetohydrodynamical (MHD) turbulence is a ubiquitous phenomenon in the universe. The intermittency of MHD turbulence at the at the dissipation scale causes the formation of current sheets -- two-dimensional sheet-like structures of intense current flows. The magnetic field across these sheets usually experiences a reversal in polarity. Through tearing-mode instability, current sheets can tear, allowing magnetic reconnection, which is important in heating the plasma as well as accelerating particles. As a pre-doctoral fellow at the Center for Computational Astrophysics (CCA), I am working with my mentors to develop a machine learning algorithm to automatically segment and track current sheets in 3D plasma simulations. We call our algorithm  <a
+            href="https://github.com/tvh0021/aweSOM/" onclick="toggleFunction()" class="w3-text-blue">aweSOM</a>. We find that in many test cases, the algorithm can effectively segment the current sheets from simulations, and we are actively working on refining the technique for public release. <br> Advisors:  <a href="https://natj.github.io" onclick="toggleFunction()" class="w3-text-blue">Joonas N&auml;ttil&auml;</a>, <a href="https://jordydavelaar.com" onclick="toggleFunction()"
+            class="w3-text-blue">Jordy Davelaar</a>, and <a href="http://user.astro.columbia.edu/~lsironi/Site/Home.html" onclick="toggleFunction()"
+            class="w3-text-blue">Lorenzo Sironi</a> (CCA / Columbia University)
+        </p>
+      </div>
+    </div>
+
     <p class="w3-center w3-xlarge" id="Sims">Meso-scale Simulations of Multiphase Accretion Flows onto Supermassive
-      Black Holes </p>
+      Black Holes (current)</p>
     <div class="w3-row-padding w3-left-align w3-large">
       <div class="w3-third w3-padding-top-64">
         <img src="research/zoom-in.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
@@ -198,14 +209,13 @@
           through a
           recently developed nested zoom-in technique, I plan to construct meso-scale simulations of the same system to
           provide boundary and initial conditions at the horizon-scale for future GRMHD simulations
-          of the accretion disk. <br> This project is carried out under
-          supervision from Dr. <a href="http://physics.unt.edu/~yl0657/" onclick="toggleFunction()"
-            class="w3-text-blue">Yuan Li</a> of UNT.</p>
+          of the accretion disk. <br> Advisor: <a href="http://physics.unt.edu/~yl0657/" onclick="toggleFunction()"
+            class="w3-text-blue">Yuan Li</a> (UNT)</p>
       </div>
     </div>
 
 
-    <p class="w3-center w3-xlarge" id="Gaia">Measuring Turbulence in the Interstellar Medium with Young Stars</p>
+    <p class="w3-center w3-xlarge" id="Gaia">Measuring Turbulence in the Interstellar Medium with Young Stars (current)</p>
     <div class="w3-row-padding w3-left-align w3-large">
       <div class="w3-third w3-padding-top-64">
         <img src="research/fig1_2205.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
@@ -229,9 +239,8 @@
           press release <a href="https://research.unt.edu/news/discovering-new-way-look-turbulence-galaxy"
             onclick="toggleFunction()" class="w3-text-blue">here</a>. Watch our interview for the American Astronomical
           Society's Journal Author Series <a href="https://www.youtube.com/watch?v=MugMF6rlCkE&ab_channel=AAS"
-            onclick="toggleFunction()" class="w3-text-blue">here</a>. <br> This project was carried out under
-          supervision from Dr. <a href="http://physics.unt.edu/~yl0657/" onclick="toggleFunction()"
-            class="w3-text-blue">Yuan Li</a> of UNT.</p>
+            onclick="toggleFunction()" class="w3-text-blue">here</a>. <br> Advisor: <a href="http://physics.unt.edu/~yl0657/" onclick="toggleFunction()"
+            class="w3-text-blue">Yuan Li</a> (UNT)</p>
       </div>
     </div>
 
@@ -251,10 +260,7 @@
           lie preferentially towards the extreme end of the <a
             href="https://ui.adsabs.harvard.edu/abs/2022ApJ...931..154R/abstract" class="w3-text-blue"
             onclick="toggleFunction()">C &#8547; || Distance</a> parameter space. This work has been accepted for
-          publication in ApJ and is currently in the final proof stage.<br>This project was carried out under
-          supervision from Dr. <a href="http://www.phys.unt.edu/~ohad/" class="w3-text-blue"
-            onclick="toggleFunction()">Ohad
-            Shemmer</a> of UNT.</p>
+          publication in ApJ and is currently in the final proof stage.<br>Advisor: <a href="http://www.phys.unt.edu/~ohad/" class="w3-text-blue" onclick="toggleFunction()">Ohad Shemmer</a> (UNT)</p>
       </div>
     </div>
 
@@ -274,10 +280,10 @@
           transfer was able to identify various star-forming regions in the Milky Way. This result shows neural style
           transfer's promise as a quick targets identification pipeline for future sky surveys. <br> Read our project
           summary poster <a href="research/neuralstyletransfer_pres.pdf" onclick="toggleFunction()"
-            class="w3-text-blue">here</a>. <br>This project was carried out under supervision from Dr. <a
+            class="w3-text-blue">here</a>. <br>Advisors: <a
             href="https://sites.google.com/view/biomed-ai/people/mark-v-albert" onclick="toggleFunction()"
-            class="w3-text-blue">Mark Albert</a> and Dr. <a href="http://physics.unt.edu/~yl0657/"
-            onclick="toggleFunction()" class="w3-text-blue">Yuan Li</a> of UNT. </p>
+            class="w3-text-blue">Mark Albert</a> and <a href="http://physics.unt.edu/~yl0657/"
+            onclick="toggleFunction()" class="w3-text-blue">Yuan Li</a> (UNT) </p>
       </div>
     </div>
 
@@ -298,11 +304,11 @@
           Midwest Relativity Meeting in Grand Rapids, Michigan. <br> Read our conference presentation <a
             href="research/bns_pres.pdf" class="w3-text-blue" onclick="toggleFunction()">here</a>. <br> Watch one of my
           simulations <a href="research/play_video.html" class="w3-text-blue"
-            onclick="toggleFunction()">here</a>.<br>This project was carried out under supervision from Dr. <a
+            onclick="toggleFunction()">here</a>.<br>Advisors: <a
             href="https://www.rit.edu/directory/jafsma-joshua-faber" class="w3-text-blue"
-            onclick="toggleFunction()">Joshua Faber</a> of RIT and Dr. <a
+            onclick="toggleFunction()">Joshua Faber</a> (RIT) and <a
             href="https://www.pas.rochester.edu/~blackman/" class="w3-text-blue" onclick="toggleFunction()">Eric
-            Blackman</a> of UR. </p>
+            Blackman</a> (UofR) </p>
       </div>
     </div>
 

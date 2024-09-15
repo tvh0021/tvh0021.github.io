@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<title>Trung Ha's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif;
+  }
+
+  body,
+  html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+  }
+
+  /* Create a Parallax Effect */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url("background/DSC09645.png");
+    min-height: 1200px;
+  }
+
+  /* Second image (CV) */
+  .bgimg-2 {
+    background-image: url("background/DSC09631.jpg");
+    min-height: 600px;
+  }
+
+  /* Third image (Research) */
+  .bgimg-3 {
+    background-image: url("background/fullskyfin_HI.jpg");
+    min-height: 600px;
+  }
+
+  /* Fourth image (Contact) */
+  .bgimg-4 {
+    background-image: url("background/DSC09646.jpg");
+    min-height: 600px;
+  }
+
+  .w3-wide {
+    letter-spacing: 10px;
+  }
+
+  .w3-hover-opacity {
+    cursor: pointer;
+  }
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1600px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4 {
+      background-attachment: scroll;
+      min-height: 600px;
+    }
+  }
+</style>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button w3-blue-grey">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-blue-grey w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#cv" class="w3-bar-item w3-button w3-blue-grey w3-hide-small"><i class="fa fa-file-text"></i> CV</a>
+      <a href="#research" class="w3-bar-item w3-button w3-blue-grey w3-hide-small"><i class="fa fa-list-ul"></i>
+        RESEARCH</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-blue-grey w3-hide-small"><i class="fa fa-envelope"></i>
+        CONTACT</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#cv" class="w3-bar-item w3-button" onclick="toggleFunction()">CV</a>
+      <a href="#research" class="w3-bar-item w3-button" onclick="toggleFunction()">RESEARCH</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container " id="home">
+    <div class="w3-display-middle" style="text-align:center; padding:20px">
+      <span class="w3-center w3-xxxlarge w3-wide w3-animate-opacity w3-text-white"> TRUNG HA </span> <br>
+      <span class="w3-center w3-xlarge w3-animate-opacity">Astronomy PhD. Student, University of Massachusetts Amherst</span>
+      <div class="w3-xlarge w3-section w3-wide">
+        <a href="https://orcid.org/0000-0001-6600-2517" class="w3-hover-opacity" target="_blank">
+          <img alt="ORCID logo" src="orcid_logo.png" width="30" height="30"></a>
+        <a href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=AND&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FHa%2C%20T%2FHa%2C%20Trung%22&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(author_facet_hier%3A%221%2FHa%2C%20T%2FHa%2C%20Trung%22)&p_=0&q=author%3A%22Ha%2C%20Trung%22&sort=date%20desc%2C%20bibcode%20desc"
+          class="w3-hover-opacity" target="_blank"><img alt="NASA ADS logo" src="ads_partial_logo_dark_background.svg"
+            width="36" height="30"></a>
+        <!--<a href="https://twitter.com/vinhtrungha99" class="w3-hover-opacity"><img alt="Twitter logo" src="twitter_logo.png" width="34" height="30"></a>-->
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64 w3-large" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p>I am a fifth-year astronomy graduate student at UMass Amherst working with Dr. <a href="http://physics.unt.edu/~yl0657/" class="w3-text-blue"
+      onclick="toggleFunction()">Yuan Li</a>. I recently transferred from University of North Texas, where I was working on a PhD. in Physics. My doctoral thesis focuses on computer simulations of the feeding and feedback cycle from supermassive black holes at the center of massive elliptical galaxies. I was also a Pre-Doctoral Fellow at the Flatiron Institute <a
+      href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/" class="w3-text-blue"
+      onclick="toggleFunction()">Center for Computational Astrophysics</a> during Fall 2023, developing machine learning techniques to automatically segment current sheet structures in magnetized plasma turbulence simulations. I have since continued working on this project as a guest researcher. Further details about my past and current research can be found in the <a href="#research" class="w3-text-blue" onclick="toggleFunction()">Research</a> section.
+    </p>
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <!-- <p><b><i class="fa fa-user w3-margin-right"></i>Trung Ha</b></p><br> -->
+        <img src="pfp.jpeg" class="w3-round w3-image w3-opacity-off w3-hover-opacity-off" alt="Photo of Trung Ha"
+          width="500" height="333">
+      </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>
+          I grew up in Ho Chi Minh city, Vietnam, before moving to the U.S. as a cultural exchange student in 2014. After high school, I obtained an A.S. from Central Arizona College in 2017. I then graduated with a B.S. in Physics from University of Rochester in 2020, and an M.S. in Physics from University of North Texas in 2022.
+        </p>
+        <p>
+          Outside of research, I enjoy traveling, building computers, and solving Rubik's cubes. I also do landscape photography, and on the rare occasions, astrophotography. Consequently, images appear as backgrounds on this website were taken by me.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Second Parallax Image with CV Text -->
+  <div class="bgimg-2 w3-display-container">
+    <div class="w3-display-middle">
+      <span class="w3-xxxlarge w3-text-white w3-blue-grey w3-padding-medium w3-wide"> CURRICULUM VITAE</span>
+    </div>
+  </div>
+
+  <!-- Container (CV Section) -->
+  <div class="w3-content w3-container w3-padding-64 w3-center" id="cv">
+    <a href="CV_0924_TVH.pdf" class="w3-button w3-blue-grey w3-padding-large w3-large w3-margin-top" target="_blank">DOWNLOAD CV</a>
+    <iframe src="CV_0924_TVH.pdf" width="100%" height="800px"></iframe>
+  </div>
+
+  <!-- Third Parallax Image with Research Text -->
+  <div class="bgimg-3 w3-display-container">
+    <div class="w3-display-middle">
+      <span class="w3-xxxlarge w3-text-white w3-blue-grey w3-padding-medium w3-wide">RESEARCH</span>
+    </div>
+  </div>
+
+  <!-- Container (Research Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="research">
+    <p class="w3-center w3-large"><em> My research projects in reverse chronological order.<br> Projects indicated by "(current)" are those I am actively working on.<br> Click on the images for more details.</em></p><br>
+
+    <p class="w3-center w3-xlarge" id="Sims">Segmentation of Current Sheets in Magnetized Plasma Turbulence with Computer Vision (current)</p>
+    <div class="w3-row-padding w3-left-align w3-large">
+      <div class="w3-third w3-padding-top-64">
+        <img src="research/fig1_key.pdf" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Top: volume rendering of the projection of the current density onto the B field, j_parallel. Middle: xy-slice of j_parallel at z = 90 c_omp. Streamlines of the in-plane magnetic field b_perp are in the foreground. Bottom: SOM segmentation, color-coded by the cluster identified via aweSOM."><br>
+      </div>
+      <div class="w3-twothird">
+        <p>
+           Magnetohydrodynamical (MHD) turbulence is a ubiquitous phenomenon in the universe. The intermittency of MHD turbulence at the at the dissipation scale causes the formation of current sheets -- two-dimensional sheet-like structures of intense current flows. The magnetic field across these sheets usually experiences a reversal in polarity. Through tearing-mode instability, current sheets can tear, allowing magnetic reconnection, which is important in heating the plasma as well as accelerating particles. As a pre-doctoral fellow at the Center for Computational Astrophysics (CCA), I am working with my mentors to develop a machine learning algorithm to automatically segment and track current sheets in 3D plasma simulations. We call our algorithm  <a
+            href="https://github.com/tvh0021/aweSOM/" onclick="toggleFunction()" class="w3-text-blue">aweSOM</a>. We find that in many test cases, the algorithm can effectively segment the current sheets from simulations, and we are actively working on refining the technique for public release. <br> Advisors:  <a href="https://natj.github.io" onclick="toggleFunction()" class="w3-text-blue">Joonas N&auml;ttil&auml;</a>, <a href="https://jordydavelaar.com" onclick="toggleFunction()"
+            class="w3-text-blue">Jordy Davelaar</a>, and <a href="http://user.astro.columbia.edu/~lsironi/Site/Home.html" onclick="toggleFunction()"
+            class="w3-text-blue">Lorenzo Sironi</a> (CCA / Columbia University)
+        </p>
+      </div>
+    </div>
+
+    <p class="w3-center w3-xlarge" id="Sims">Meso-scale Simulations of Multiphase Accretion Flows onto Supermassive
+      Black Holes (current)</p>
+    <div class="w3-row-padding w3-left-align w3-large">
+      <div class="w3-third w3-padding-top-64">
+        <img src="research/zoom-in.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="(Preliminary result) Number density projection plot of our meso-scale simulation. The larger figure shows a region of 1.6 kpc x 0.9 kpc, which contains an inner and outer disks, rotating in opposite directions. The zoomed in figure shows a region of 10 pc x 10 pc, which shows the accretion flow onto the horizon-scale."><br>
+      </div>
+      <div class="w3-twothird">
+        <p> Current state-of-the-art numerical simulations of supermassive black holes at the center of galaxies
+          are largely successful at recreating the accretion flows observed via telescopes, especially on the
+          galaxy-scale (~0.1 to hundreds of kpc) and the event-horizon-scale (~10^-2 pc). However, our
+          current theoretical understanding of the accretion flow between the Bondi radius and the outer edge of the
+          accretion disk (the meso-scale) lags behind observations. My Ph.D. thesis aims to provide theoretical
+          explanations for the observed meso-scale accretion flows. To this end, I am designing galaxy-scale MHD
+          simulations of the accretion flow and relativistic jet feedback motivated by
+          observations of the elliptical galaxy M87 using the adaptive mesh-refinement code <a
+            href="https://www.athena-astro.app/" onclick="toggleFunction()" class="w3-text-blue">Athena++</a>. Then,
+          through a
+          recently developed nested zoom-in technique, I plan to construct meso-scale simulations of the same system to
+          provide boundary and initial conditions at the horizon-scale for future GRMHD simulations
+          of the accretion disk. <br> Advisor: <a href="http://physics.unt.edu/~yl0657/" onclick="toggleFunction()"
+            class="w3-text-blue">Yuan Li</a> (UNT)</p>
+      </div>
+    </div>
+
+
+    <p class="w3-center w3-xlarge" id="Gaia">Measuring Turbulence in the Interstellar Medium with Young Stars (current)</p>
+    <div class="w3-row-padding w3-left-align w3-large">
+      <div class="w3-third w3-padding-top-64">
+        <img src="research/fig1_2205.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Figure 1 of our recent paper (arXiv:2205.00012), showing four of the nearest star-forming region to the Solar system: Orion, Ophiuchus, Perseus, and Taurus. In the foreground are young stars, in the background is H&alpha; intensity (top) and H&alpha; line-of-sight velocity (bottom). "><br>
+      </div>
+      <div class="w3-twothird">
+        <p> Stars are born out of the turbulent molecular gas of the interstellar medium. Once formed, they decouple
+          from the surrounding gas, but still retain their pre-natal kinematics. Using <a
+            href="https://sci.esa.int/web/gaia" onclick="toggleFunction()" class="w3-text-blue">Gaia</a> astrometric
+          measurements in conjunction with <a href="https://www.sdss.org/surveys/apogee-2/" onclick="toggleFunction()"
+            class="w3-text-blue">APOGEE-2</a>, we calculate the velocity structure function of stars in four nearby
+          star-forming regions and compare them to the structure functions found in H&alpha; and CO gas. <br> In our <a
+            href="https://iopscience.iop.org/article/10.3847/1538-4357/ac76bf" onclick="toggleFunction()"
+            class="w3-text-blue">2022 paper</a>, we found that the structure functions of the four
+          star-forming regions in the Solar neighborhood shows a universal scaling of turbulence when traced by young
+          stars. We also found evidence of local supernova energy injection in Orion and Ophiuchus, which is supported
+          by observational studies. <br> This work is a follow-up to our <a
+            href="https://iopscience.iop.org/article/10.3847/2041-8213/abd8c9" onclick="toggleFunction()"
+            class="w3-text-blue">2021 paper</a>, which investigates young stars in the Orion Complex
+          specifically. <br>Read our
+          press release <a href="https://research.unt.edu/news/discovering-new-way-look-turbulence-galaxy"
+            onclick="toggleFunction()" class="w3-text-blue">here</a>. Watch our interview for the American Astronomical
+          Society's Journal Author Series <a href="https://www.youtube.com/watch?v=MugMF6rlCkE&ab_channel=AAS"
+            onclick="toggleFunction()" class="w3-text-blue">here</a>. <br> Advisor: <a href="http://physics.unt.edu/~yl0657/" onclick="toggleFunction()"
+            class="w3-text-blue">Yuan Li</a> (UNT)</p>
+      </div>
+    </div>
+
+    <p class="w3-center w3-xlarge" id="WLQs"> Weak Emission-Line Quasars (WLQs) in the Context of C &#8547;
+      Emission-line Properties</p><br>
+    <div class="w3-row-padding w3-left-align w3-large">
+      <div class="w3-third w3-padding-top-64">
+        <img src="research/CIV_distance_LLEdd_corr.png" style="width:100%" onclick="onClick(this)"
+          class="w3-hover-opacity"
+          alt="Preliminary result from our recently submitted paper. We found a strong correlation between the C &#8547; rest-frame equivalent widths and the C &#8547; || Distance parameter, which holds for <em>all</em> quasars in our sample.">
+      </div>
+      <div class="w3-twothird">
+        <p> WLQs are a peculiar subset of luminous active galactic nuclei whose emission spectra show extremely weak
+          emission line profiles of Ly&alpha;+N &#8548; &lambda;1240 and/or C &#8547; &lambda;1549. Much effort has been
+          invested to explain the weakness in emission profiles of these quasars over the last two decades. My current
+          project proposes a new way of looking at WLQs not as a disjoint subset of quasars but rather as quasars that
+          lie preferentially towards the extreme end of the <a
+            href="https://ui.adsabs.harvard.edu/abs/2022ApJ...931..154R/abstract" class="w3-text-blue"
+            onclick="toggleFunction()">C &#8547; || Distance</a> parameter space. This work has been accepted for
+          publication in ApJ and is currently in the final proof stage.<br>Advisor: <a href="http://www.phys.unt.edu/~ohad/" class="w3-text-blue" onclick="toggleFunction()">Ohad Shemmer</a> (UNT)</p>
+      </div>
+    </div>
+
+    <p class="w3-center w3-xlarge" id="WHAM"> Similarity Mapping of the Milky Way Using Neural Style Transfer</p>
+    <div class="w3-row-padding w3-left-align w3-large">
+      <div class="w3-third w3-padding-top-64">
+        <img src="research/wham_sim.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Background: Cartesian projection of the Milky Way H&alpha; map along the Galactic equator, with the Galactic center at the middle of the frame. Foreground: each white rectangle is a region identified by the VGG-19 algorithm as 'similar' to the Orion region. We observe that all highlighted frames are regions with high star formation rates, indicating that the neural network picked up this information from the flux and velocity input by color channels.">
+      </div>
+      <div class="w3-twothird">
+        <p> As a graduate student advisor, I helped M.S. students in the A.I. summer program at UNT apply the
+          pre-trained
+          <a href="https://ui.adsabs.harvard.edu/abs/2014arXiv1409.1556S/abstract" class="w3-text-blue"
+            onclick="toggleFunction()">VGG-19</a> deep neural network architecture to the Milky Way map from the <a
+            href="http://www.astro.wisc.edu/wham-site//" class="w3-text-blue" onlick="toggleFunction()">Wisconsin
+            H-Alpha Mapper</a> survey. Using the Orion Molecular Cloud Complex as a reference image, neural style
+          transfer was able to identify various star-forming regions in the Milky Way. This result shows neural style
+          transfer's promise as a quick targets identification pipeline for future sky surveys. <br> Read our project
+          summary poster <a href="research/neuralstyletransfer_pres.pdf" onclick="toggleFunction()"
+            class="w3-text-blue">here</a>. <br>Advisors: <a
+            href="https://sites.google.com/view/biomed-ai/people/mark-v-albert" onclick="toggleFunction()"
+            class="w3-text-blue">Mark Albert</a> and <a href="http://physics.unt.edu/~yl0657/"
+            onclick="toggleFunction()" class="w3-text-blue">Yuan Li</a> (UNT) </p>
+      </div>
+    </div>
+
+    <p class="w3-center w3-xlarge" id="BNS"> Generating Initial Data for Binary Neutron Stars Merger Simulations</p><br>
+    <div class="w3-row-padding w3-left-align w3-large">
+      <div class="w3-third w3-padding-top-48">
+        <img src="research/170_114_2.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Isobaric contours plot of a binary neutron stars merger. The more compact star is 1.7 solar mass, while the puffier star is 1.14 solar mass. Each contour traces a curve of equal gas density, and brighter color indicates higher density.">
+      </div>
+      <div class="w3-twothird">
+        <p> I worked as an undergraduate research student at the Rochester Institute of Technology's <a
+            href="https://ccrg.rit.edu/" class="w3-text-blue" onclick="toggleFunction()">Center for Computational
+            Relativity and Gravitation</a> from 2018 to 2020. There, I modified and documented the <a
+            href="https://lorene.obspm.fr/" class="w3-text-blue" onclick="toggleFunction()">LORENE</a> initial data code
+          to generate physically motivated binary neutron stars pre-merger. Furthermore, I performed several GRMHD
+          simulations of binary neutron stars merger using the <a href="https://einsteintoolkit.org/"
+            class="w3-text-blue" onclick="toggleFunction()">Einstein Toolkit</a>, and reported our findings at the 2019
+          Midwest Relativity Meeting in Grand Rapids, Michigan. <br> Read our conference presentation <a
+            href="research/bns_pres.pdf" class="w3-text-blue" onclick="toggleFunction()">here</a>. <br> Watch one of my
+          simulations <a href="research/play_video.html" class="w3-text-blue"
+            onclick="toggleFunction()">here</a>.<br>Advisors: <a
+            href="https://www.rit.edu/directory/jafsma-joshua-faber" class="w3-text-blue"
+            onclick="toggleFunction()">Joshua Faber</a> (RIT) and <a
+            href="https://www.pas.rochester.edu/~blackman/" class="w3-text-blue" onclick="toggleFunction()">Eric
+            Blackman</a> (UofR) </p>
+      </div>
+    </div>
+
+    <!--
+  <div class="w3-row-padding w3-center w3-section w3-large">
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>-->
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+        class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Contact Text -->
+  <div class="bgimg-4 w3-display-container">
+    <div class="w3-display-middle">
+      <span class="w3-xxxlarge w3-text-white w3-padding-medium w3-blue-grey w3-wide"> CONTACT</span>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64 w3-large" id="contact">
+    <h3 class="w3-center">WHERE I WORK</h3>
+
+    <!-- <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-twothird w3-container w3-hide-small">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2770.0036655785507!2d-73.99243013474869!3d40.740315636845224!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3922b9013%3A0xaa8b3847c99de596!2sCenter%20for%20Computational%20Astrophysics!5e0!3m2!1sen!2sus!4v1692420306282!5m2!1sen!2sus"
+          width="560" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div> -->
+      <div class="w3-twothird w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> I am currently working remotely, but I will soon be located at:
+          <br> <span style="padding-left:50px">LGRT-B</span><br><span style="padding-left:50px">710 North Pleasant St.</span><br><span style="padding-left:50px">Amherst, MA 01003<br></span>
+          <a class="btn" href="mailto:trungha@my.unt.edu">
+            <i
+              class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right padding-left:2px"></i></a>Email:<br>
+          <span style="padding-left:50px">tvha(at)umass.edu</span><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://orcid.org/0000-0001-6600-2517">
+        <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="20"
+          height="20"></a>
+      <a
+        href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Ha%2C%20Trung%22&sort=date%20desc%2C%20bibcode%20desc&p_=0"><img
+          alt="NASA ADS logo" src="ads_partial_logo_dark_background.svg" width="24" height="20"></a>
+      <!--<a href="https://twitter.com/vinhtrungha99" class="fa fa-twitter w3-hover-opacity"></a>-->
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () {
+      myFunction()
+    };
+
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>

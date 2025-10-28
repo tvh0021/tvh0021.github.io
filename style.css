@@ -28,7 +28,7 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url("background/DSC09645.png");
-  min-height: 800px;
+  min-height: 1000px;
 }
 
 /* Second image (CV) */
@@ -40,13 +40,13 @@ body, html {
 /* Third image (Research) */
 .bgimg-3 {
   background-image: url("background/fullskyfin_HI.jpg");
-  min-height: 400px;
+  min-height: 600px;
 }
 
 /* Fourth image (Contact) */
 .bgimg-4 {
   background-image: url("background/accretion_disk.png");
-  min-height: 400px;
+  min-height: 600px;
 }
 
 .w3-wide {
@@ -57,10 +57,10 @@ body, html {
   cursor: pointer;
 }
 
-/* Turn off parallax scrolling for tablets and phones */
+/* Turn off parallax scrolling for tablets and phones
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
     min-height: 600px;
   }
-}
+} */

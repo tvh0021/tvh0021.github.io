@@ -9,9 +9,17 @@ body, html {
   line-height: 1.8;
 }
 
-/* Create a Parallax Effect */
+/* Create a Parallax Effect
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* Background images — no parallax (scrolling) */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,25 +28,25 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url("background/DSC09645.png");
-  min-height: 1200px;
+  min-height: 800px;
 }
 
 /* Second image (CV) */
 .bgimg-2 {
   background-image: url("background/DSC09631.jpg");
-  min-height: 600px;
+  min-height: 1000px;
 }
 
 /* Third image (Research) */
 .bgimg-3 {
   background-image: url("background/fullskyfin_HI.jpg");
-  min-height: 600px;
+  min-height: 400px;
 }
 
 /* Fourth image (Contact) */
 .bgimg-4 {
-  background-image: url("background/DSC09646.jpg");
-  min-height: 600px;
+  background-image: url("background/accretion_disk.png");
+  min-height: 400px;
 }
 
 .w3-wide {

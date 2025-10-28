@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact - Trung Ha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Trung Ha — Astronomy PhD candidate. Research: MHD simulations, magnetized plasma, ISM turbulence.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://tvh0021.github.io/">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Trung Ha — Astrophysicist">
+    <meta property="og:description"
+        content="MHD simulations, plasma current-sheet segmentation (aweSOM), Gaia stellar turbulence.">
+    <meta property="og:image" content="https://tvh0021.github.io/research/multiscale-proj-xandz.pdf">
+    <meta property="og:url" content="https://tvh0021.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- Hero -->
+    <div class="bgimg-4 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxxlarge w3-text-white w3-padding-medium w3-blue-grey w3-wide"> CONTACT</span>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64 w3-large">
+        <h3 class="w3-center">WHERE I WORK</h3>
+
+        <div class="w3-twothird w3-panel w3-center">
+            <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                <br>
+                <span style="padding-left:50px">517M, LGRT-B</span><br>
+                <span style="padding-left:50px">710 North Pleasant St.</span><br>
+                <span style="padding-left:50px">Amherst, MA 01003</span><br><br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Email:
+                <br>
+                <span style="padding-left:50px">tvha(at)umass.edu</span>
+            </div>
+        </div>
+
+        <hr>
+
+        <h4 class="w3-center">Links</h4>
+        <div class="w3-center">
+            <a href="https://scholar.google.com/citations?hl=en&user=XwPs9zsAAAAJ&view_op=list_works"
+                class="w3-button w3-blue" target="_blank">Google Scholar</a>
+            <a class="w3-button w3-blue" href="https://orcid.org/0000-0001-6600-2517" target="_blank">ORCID</a>
+            <a class="w3-button w3-blue" href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Ha%2C%20Trung%22"
+                target="_blank">NASA ADS</a>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        // Function to load HTML includes
+        function loadIncludes() {
+            // Load header
+            fetch('../inc/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            // Load footer
+            fetch('../inc/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        }
+
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', loadIncludes);
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Research - Trung Ha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Trung Ha — Astronomy PhD candidate. Research: MHD simulations, magnetized plasma, ISM turbulence.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://tvh0021.github.io/">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Trung Ha — Astrophysicist">
+    <meta property="og:description"
+        content="MHD simulations, plasma current-sheet segmentation (aweSOM), Gaia stellar turbulence.">
+    <meta property="og:image" content="https://tvh0021.github.io/research/multiscale-proj-xandz.pdf">
+    <meta property="og:url" content="https://tvh0021.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <!-- Include Navigation -->
+    <div id="header"></div>
+
+    <!-- Hero -->
+    <div class="bgimg-3 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxxlarge w3-text-white w3-blue-grey w3-padding-medium w3-wide">RESEARCH</span>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="research">
+        <p class="w3-center w3-large"><em> My research projects in reverse chronological order.<br> Click on the images
+                for more details.</em></p>
+        <br>
+
+        <p class="w3-center w3-xlarge" id="Sims">Ongoing: Meso-scale Simulations of Multiphase Accretion Flows onto
+            Supermassive
+            Black Holes</p>
+        <div class="w3-row-padding w3-left-align w3-large">
+            <div class="w3-third w3-padding-top-64">
+                <img src="../research/multiscale-proj-xandz.pdf" style="width:100%" onclick="onClick(this)"
+                    class="w3-hover-opacity"
+                    alt="yz-projections of number density at various scales. Panels a and b are taken from the fiducial simulation (8 levels of SMR) to show the galaxy-scale dynamics, while the other panels are taken from the meso-scale simulation (20 levels of SMR). The color scales are logarithmic, and are allowed to span dynamically. The blue streamlines trace the motion of gas. The dashed circle in panel g denotes the accretion zone of the meso-scale simulation."><br>
+            </div>
+            <div class="w3-twothird">
+                <p> Current state-of-the-art numerical simulations of supermassive black holes at the center of galaxies
+                    are largely successful at recreating the accretion flows observed via telescopes, especially on the
+                    galaxy-scale (~0.1 to hundreds of kpc) and the event-horizon-scale (~10^-2 pc). However, our
+                    current theoretical understanding of the accretion flow between the Bondi radius and the outer edge
+                    of the
+                    accretion disk (the meso-scale) lags behind observations. My thesis project aims to provide
+                    theoretical
+                    explanations for the observed meso-scale accretion flows. To this end, I am running galaxy-scale
+                    MHD
+                    simulations of the accretion flow and relativistic jet feedback motivated by
+                    observations of the elliptical galaxy M87 using the adaptive mesh refinement code <a
+                        href="https://www.athena-astro.app/" class="w3-text-blue">Athena++</a>. Then,
+                    through a nested zoom-in technique, I run meso-scale simulations of the same
+                    system to
+                    provide boundary and initial conditions at the horizon-scale for future GRMHD simulations
+                    of the accretion disk as well as more accurate subgrid models for cosmological simulations. <br>
+                    Advisor: <a href="https://www.umass.edu/astronomy/about/directory/yuan-li" class="w3-text-blue">Yuan
+                        Li</a> (UMass Amherst)</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="w3-center w3-xlarge">Segmentation of Current Sheets in Magnetized Plasma Turbulence with
+            Computer Vision</p>
+        <div class="w3-row-padding w3-left-align w3-large">
+            <div class="w3-third w3-padding-top-64">
+                <img src="../research/fig1_key.pdf" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Top: volume rendering of the projection of the current density onto the B field, j_parallel. Middle: xy-slice of j_parallel at z = 90 c_omp. Streamlines of the in-plane magnetic field b_perp are in the foreground. Bottom: SOM segmentation, color-coded by the cluster identified via aweSOM."><br>
+            </div>
+            <div class="w3-twothird">
+                <p>
+                    Magnetohydrodynamical (MHD) turbulence is a ubiquitous phenomenon in the universe. The intermittency
+                    in plasma
+                    turbulence causes the formation of current sheets -- two-dimensional sheet-like structures of
+                    intense current
+                    flows. The magnetic field across these sheets usually experiences a reversal in polarity. Through
+                    tearing-mode
+                    instability, current sheets can tear, allowing magnetic reconnection, which is important in heating
+                    the plasma
+                    as well as accelerating particles. As a Pre-doctoral Fellow at the Center for Computational
+                    Astrophysics, I
+                    developed a machine learning framework, <a href="https://github.com/tvh0021/aweSOM"
+                        class="w3-text-blue">aweSOM</a>, to automatically segment and track current sheets in 3D plasma
+                    simulations.
+                    We find that in many test cases, the algorithm can effectively segment the current sheets from
+                    simulations.
+                    <br> We recently published both the science paper in ApJ Letters: <a
+                        href="https://iopscience.iop.org/article/10.3847/2041-8213/add47b" class="w3-text-blue">2025
+                        ApJL 985 L31</a>, and the package in the Journal of Open Source Software (JOSS): <a
+                        href="https://joss.theoj.org/papers/10.21105/joss.07613"
+                        class="w3-text-blue">2025JOSS...10.7613H</a> <br>
+                    Advisors: <a href="https://natj.github.io" class="w3-text-blue">Joonas Nättilä</a>, <a
+                        href="https://jordydavelaar.com" class="w3-text-blue">Jordy Davelaar</a>, and <a
+                        href="http://user.astro.columbia.edu/~lsironi/Site/Home.html" class="w3-text-blue">Lorenzo
+                        Sironi</a> (CCA / Columbia University)
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="w3-center w3-xlarge" id="Gaia">Measuring Turbulence in the Interstellar Medium with Young Stars
+        </p>
+        <div class="w3-row-padding w3-left-align w3-large">
+            <div class="w3-third w3-padding-top-64">
+                <img src="../research/fig1_2205.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Figure 1 of our recent paper (arXiv:2205.00012), showing four of the nearest star-forming region to the Solar system: Orion, Ophiuchus, Perseus, and Taurus. In the foreground are young stars, in the background is H&alpha; intensity (top) and H&alpha; line-of-sight velocity (bottom). "><br>
+            </div>
+            <div class="w3-twothird">
+                <p> Stars are born out of the turbulent molecular gas of the interstellar medium. Once formed, they
+                    decouple
+                    from the surrounding gas, but still retain their pre-natal kinematics. Using <a
+                        href="https://sci.esa.int/web/gaia" class="w3-text-blue">Gaia</a> astrometric
+                    measurements in conjunction with <a href="https://www.sdss.org/surveys/apogee-2/"
+                        class="w3-text-blue">APOGEE-2</a>, we calculate the velocity structure function of stars in four
+                    nearby star-forming regions and compare them to the structure functions found in H&alpha; and CO
+                    gas. <br> In our <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac76bf"
+                        class="w3-text-blue">2022 paper</a>, we found that the structure functions of the four
+                    star-forming regions in the Solar neighborhood shows a universal scaling of turbulence when traced
+                    by young stars. We also found evidence of local supernova energy injection in Orion and Ophiuchus,
+                    which is supported by observational studies. <br> This work is a follow-up to our <a
+                        href="https://iopscience.iop.org/article/10.3847/2041-8213/abd8c9" class="w3-text-blue">2021
+                        paper</a>, which investigates young stars in the Orion Complex specifically. <br>Read our
+                    press release <a href="https://research.unt.edu/news/discovering-new-way-look-turbulence-galaxy"
+                        class="w3-text-blue">here</a>. Watch our interview for the American Astronomical Society's
+                    Journal Author Series <a href="https://www.youtube.com/watch?v=MugMF6rlCkE&ab_channel=AAS"
+                        class="w3-text-blue">here</a>. <br> Advisor: <a
+                        href="https://people.umass.edu/~yuanli/?_gl=1*1uz2n58*_gcl_au*MTY1ODM4ODM2NS4xNzU5MTEyNDA4*_ga*MTUxNjc2MzI5My4xNzU5MTEyNDEw*_ga_21RLS0L7EB*czE3NjE1OTUwNjQkbzEyJGcwJHQxNzYxNTk1MDY0JGo2MCRsMCRoMA.."
+                        class="w3-text-blue">Yuan Li</a> (UNT)</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="w3-center w3-xlarge" id="WLQs"> Weak Emission-Line Quasars (WLQs) in the Context of C &#8547;
+            Emission-line Properties</p><br>
+        <div class="w3-row-padding w3-left-align w3-large">
+            <div class="w3-third w3-padding-top-64">
+                <img src="../research/CIV_distance_LLEdd_corr.png" style="width:100%" onclick="onClick(this)"
+                    class="w3-hover-opacity"
+                    alt="Preliminary result from our recently submitted paper. We found a strong correlation between the C IV rest-frame equivalent widths and the C IV || Distance parameter, which holds for all quasars in our sample.">
+            </div>
+            <div class="w3-twothird">
+                <p> WLQs are a peculiar subset of luminous active galactic nuclei whose emission spectra show extremely
+                    weak
+                    emission line profiles of Ly&alpha;+N V &lambda;1240 and/or C IV &lambda;1549. Much effort has been
+                    invested to explain the weakness in emission profiles of these quasars over the last two decades. My
+                    current
+                    project proposes a new way of looking at WLQs not as a disjoint subset of quasars but rather as
+                    quasars that
+                    lie preferentially towards the extreme end of the <a
+                        href="https://ui.adsabs.harvard.edu/abs/2022ApJ...931..154R/abstract" class="w3-text-blue">C IV
+                        || Distance</a> parameter space. This work has been accepted for
+                    publication in ApJ and is currently in the final proof stage.<br>Advisor: <a
+                        href="http://www.phys.unt.edu/~ohad/" class="w3-text-blue">Ohad Shemmer</a> (UNT)
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="w3-center w3-xlarge" id="WHAM"> Similarity Mapping of the Milky Way Using Neural Style Transfer</p>
+        <div class="w3-row-padding w3-left-align w3-large">
+            <div class="w3-third w3-padding-top-64">
+                <img src="../research/wham_sim.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Background: Cartesian projection of the Milky Way H-alpha map along the Galactic equator, with the Galactic center at the middle of the frame. Foreground: each white rectangle is a region identified by the VGG-19 algorithm as 'similar' to the Orion region. We observe that all highlighted frames are regions with high star formation rates, indicating that the neural network picked up this information from the flux and velocity input by color channels.">
+            </div>
+            <div class="w3-twothird">
+                <p> As a graduate student advisor, I helped M.S. students in the A.I. summer program at UNT apply the
+                    pre-trained <a href="https://ui.adsabs.harvard.edu/abs/2014arXiv1409.1556S/abstract"
+                        class="w3-text-blue">VGG-19</a> deep neural network architecture to the Milky Way map from the
+                    <a href="http://www.astro.wisc.edu/wham-site//" class="w3-text-blue">Wisconsin H-Alpha Mapper</a>
+                    survey. Using the Orion Molecular Cloud Complex as a reference image, neural style transfer was able
+                    to identify various star-forming regions in the Milky Way. This result shows neural style transfer's
+                    promise as a quick targets identification pipeline for future sky surveys. <br> Read our project
+                    summary poster <a href="research/neuralstyletransfer_pres.pdf" class="w3-text-blue">here</a>.
+                    <br>Advisors: <a href="https://sites.google.com/view/biomed-ai/people/mark-v-albert"
+                        class="w3-text-blue">Mark Albert</a> and <a
+                        href="https://people.umass.edu/~yuanli/?_gl=1*1uz2n58*_gcl_au*MTY1ODM4ODM2NS4xNzU5MTEyNDA4*_ga*MTUxNjc2MzI5My4xNzU5MTEyNDEw*_ga_21RLS0L7EB*czE3NjE1OTUwNjQkbzEyJGcwJHQxNzYxNTk1MDY0JGo2MCRsMCRoMA.."
+                        class="w3-text-blue">Yuan Li</a> (UNT)
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="w3-center w3-xlarge" id="BNS"> Generating Initial Data for Binary Neutron Stars Merger Simulations</p>
+        <br>
+        <div class="w3-row-padding w3-left-align w3-large">
+            <div class="w3-third w3-padding-top-48">
+                <img src="../research/170_114_2.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Isobaric contours plot of a binary neutron stars merger. The more compact star is 1.7 solar mass, while the puffier star is 1.14 solar mass. Each contour traces a curve of equal gas density, and brighter color indicates higher density.">
+            </div>
+            <div class="w3-twothird">
+                <p> I worked as an undergraduate research student at the Rochester Institute of Technology's <a
+                        href="https://ccrg.rit.edu/" class="w3-text-blue">Center for Computational Relativity and
+                        Gravitation</a> from 2018 to 2020. There, I modified and documented the <a
+                        href="https://lorene.obspm.fr/" class="w3-text-blue">LORENE</a> initial data code to generate
+                    physically motivated binary neutron stars pre-merger. Furthermore, I performed several GRMHD
+                    simulations of binary neutron stars merger using the <a href="https://einsteintoolkit.org/"
+                        class="w3-text-blue">Einstein Toolkit</a>, and reported our findings at the 2019 Midwest
+                    Relativity Meeting in Grand Rapids, Michigan. <br> Read our conference presentation <a
+                        href="research/bns_pres.pdf" class="w3-text-blue">here</a>. <br> Watch one of my simulations <a
+                        href="research/play_video.html" class="w3-text-blue">here</a>.<br>Advisors: <a
+                        href="https://www.rit.edu/directory/jafsma-joshua-faber" class="w3-text-blue">Joshua Faber</a>
+                    (RIT) and <a href="https://www.pas.rochester.edu/~blackman/" class="w3-text-blue">Eric Blackman</a>
+                    (UofR) </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        // Function to load HTML includes
+        function loadIncludes() {
+            // Load header
+            fetch('../inc/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            // Load footer
+            fetch('../inc/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        }
+
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', loadIncludes);
+    </script>
+    <script src="../script.js"></script>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+</body>
+
+</html>

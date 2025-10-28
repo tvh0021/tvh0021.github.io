@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About - Trung Ha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Trung Ha — Astronomy PhD candidate. Research: MHD simulations, magnetized plasma, ISM turbulence.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://tvh0021.github.io/">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Trung Ha — Astrophysicist">
+    <meta property="og:description"
+        content="MHD simulations, plasma current-sheet segmentation (aweSOM), Gaia stellar turbulence.">
+    <meta property="og:image" content="https://tvh0021.github.io/research/multiscale-proj-xandz.pdf">
+    <meta property="og:url" content="https://tvh0021.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <!-- Include Navigation -->
+    <div id="header"></div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64 w3-large" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p>I am a sixth-year astronomy PhD candidate at UMass Amherst working with Dr. <a
+                href="https://people.umass.edu/~yuanli/?_gl=1*1uz2n58*_gcl_au*MTY1ODM4ODM2NS4xNzU5MTEyNDA4*_ga*MTUxNjc2MzI5My4xNzU5MTEyNDEw*_ga_21RLS0L7EB*czE3NjE1OTUwNjQkbzEyJGcwJHQxNzYxNTk1MDY0JGo2MCRsMCRoMA.."
+                class="w3-text-blue" target="_blank">Yuan Li</a>. Previously, I was a PhD candidate in physics at the
+            University of North Texas. My doctoral thesis
+            focuses
+            on computer simulations of the feeding and feedback cycle from supermassive black holes at the center of
+            massive
+            elliptical galaxies. I was also a Pre-Doctoral Fellow at the Flatiron Institute <a
+                href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/"
+                class="w3-text-blue" target="_blank">Center for Computational Astrophysics</a> during Fall
+            2023, developing machine
+            learning techniques to automatically segment current sheet structures in magnetized plasma turbulence
+            simulations. Further details about my past and current
+            research can be found in the <a href="research.html" class="w3-text-blue">Research</a>
+            section.
+        </p>
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <img src="../pfp.jpeg" class="w3-round w3-image w3-opacity-off w3-hover-opacity-off" alt="Photo of Trung Ha"
+                width="500" height="333">
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+            <p>
+                I grew up in Ho Chi Minh city, Vietnam, before moving to the U.S. as a cultural exchange student in
+                2014. After
+                high school, I obtained an A.S. from Central Arizona College in 2017. I then graduated with a B.S. in
+                Physics
+                from University of Rochester in 2020, and an M.S. in Physics from University of North Texas in 2022.
+            </p>
+            <p>
+                Outside of research, I enjoy traveling, building computers, and solving Rubik's cubes. I also do
+                landscape
+                photography, and on the rare occasions, astrophotography. Consequently, images that appear as
+                backgrounds on this
+                website were taken (or made) by me.
+            </p>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        // Function to load HTML includes
+        function loadIncludes() {
+            // Load header
+            fetch('../inc/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            // Load footer
+            fetch('../inc/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        }
+
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', loadIncludes);
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

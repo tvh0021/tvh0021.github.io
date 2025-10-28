@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CV - Trung Ha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Trung Ha — Astronomy PhD candidate. Research: MHD simulations, magnetized plasma, ISM turbulence.">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://tvh0021.github.io/">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Trung Ha — Astrophysicist">
+    <meta property="og:description"
+        content="MHD simulations, plasma current-sheet segmentation (aweSOM), Gaia stellar turbulence.">
+    <meta property="og:image" content="https://tvh0021.github.io/research/multiscale-proj-xandz.pdf">
+    <meta property="og:url" content="https://tvh0021.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style>
+        /* Small PDF preview styling */
+        .pdf-container {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .pdf-actions {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .pdf-embed {
+            width: 100%;
+            height: calc(100vh - 240px);
+            /* responsive - adjust if header/footer sizes change */
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        @media (max-width: 600px) {
+            .pdf-embed {
+                height: calc(100vh - 200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Include Navigation -->
+    <div id="header"></div>
+
+    <!-- Container (CV Section) -->
+    <div class="w3-content w3-container w3-padding-64 w3-center" id="cv">
+        <h3 class="w3-center">CURRICULUM VITAE</h3>
+
+        <div class="pdf-container">
+            <div class="pdf-actions">
+                <!-- Open in new tab -->
+                <a href="../CV_1025_TVH.pdf" target="_blank" class="w3-button w3-blue-grey w3-padding-large w3-large">
+                    Open full PDF
+                </a>
+
+                <!-- Download -->
+                <a href="../CV_1025_TVH.pdf" download class="w3-button w3-green w3-padding-large w3-large">
+                    Download CV
+                </a>
+            </div>
+
+            <!-- Embedded viewer: page-width zoom by default.
+                 Note: some browsers ignore the #zoom fragment; PDF.js gives consistent behavior. -->
+            <object class="pdf-embed" data="../CV_1025_TVH.pdf#page=1&zoom=page-width" type="application/pdf">
+                <p>
+                    Your browser does not support inline PDFs. You can
+                    <a href="../CV_1025_TVH.pdf" target="_blank">open the CV in a new tab</a> or
+                    <a href="../CV_1025_TVH.pdf" download>download it</a>.
+                </p>
+            </object>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        // Function to load HTML includes
+        function loadIncludes() {
+            // Load header
+            fetch('../inc/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            // Load footer
+            fetch('../inc/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        }
+
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', loadIncludes);
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

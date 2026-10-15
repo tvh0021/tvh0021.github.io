@@ -1,47 +1,60 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1017">
-  <meta name="description" content="I study turbulent processes in the universe, including black-hole accretion, reconnection in magnetized plasma, and the motion of young stars. My work combines numerical simulations, machine learning, and data analysis to further our understanding of how the universe works.">
-  <title>Trung Ha - Computational astrophysicist</title>
-  <link rel="icon" href="/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<link rel="icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trung Ha, PhD · Computational astrophysicist</title>
+<meta name="description" content="Trung Ha, PhD, is a computational astrophysicist at the Rochester Institute of Technology studying black-hole accretion, plasma turbulence, and young stars.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Trung Ha, PhD">
+<meta property="og:title" content="Trung Ha, PhD · Computational astrophysicist">
+<meta property="og:description" content="Trung Ha, PhD, is a computational astrophysicist at the Rochester Institute of Technology studying black-hole accretion, plasma turbulence, and young stars.">
+<meta property="og:url" content="https://tvh0021.github.io/">
+<meta property="og:image" content="https://tvh0021.github.io/assets/star-trails-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Star trails above a dark landscape">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header"><nav class="shell nav" aria-label="Primary">
-    <a class="wordmark" href="index.html">Trung Ha</a>
-    <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="menu">Menu</button>
-    <ul class="nav-links" id="menu" data-menu><li><a aria-current="page" href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="cv.html">CV</a></li><li><a href="contact.html">Contact</a></li></ul>
-  </nav></header>
-  <main id="main">
-    <section class="hero">
-      <img class="hero-image" src="assets/star-trails.webp" width="1432" height="1432" fetchpriority="high" decoding="async" alt="Star trails above a dark landscape">
-      <div class="shell hero-copy">
-        <h1>Trung Ha, PhD</h1>
-        <p class="role">Computational astrophysicist</p>
-        <p class="opening">I study turbulent processes in the universe, including black-hole accretion, reconnection in magnetized plasma, and the motion of young stars. My work combines numerical simulations, machine learning, and data analysis to further our understanding of how the universe works.</p>
-        <div class="hero-actions"><a class="button primary" href="research.html">Research <span class="arrow" aria-hidden="true">→</span></a><a class="button" href="cv.html">CV</a></div>
+<body class="home">
+<header class="site-nav"><nav class="wrap" aria-label="Primary">
+  <a class="mark" href="index.html">Trung Ha</a>
+  <ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="research.html">Research</a></li><li><a href="cv.html">CV</a></li><li><a href="contact.html">Contact</a></li></ul>
+</nav></header>
+<main>
+  <div class="exposure" data-trails="assets/sky/trails.json">
+    <img class="plate" src="assets/sky/plate.webp" width="1432" height="1432" alt="" fetchpriority="high">
+    <canvas aria-hidden="true"></canvas>
+    <img class="trees" src="assets/sky/trees.webp" width="1432" height="1432" alt="">
+    <img class="photo" src="assets/star-trails.webp" width="1432" height="1432" alt="Star trails above a dark landscape">
+    <div class="title wrap">
+      <h1>Trung Ha, PhD</h1>
+      <p class="label">Computational astrophysicist</p>
+      <div class="intro">
+        <img class="portrait" src="assets/portrait.webp" width="1440" height="1440" alt="Portrait of Trung Ha">
+        <div>
+          <p>I am a postdoctoral researcher at the Rochester Institute of Technology. I&nbsp;study turbulent processes in the universe, including black-hole accretion, reconnection in magnetized plasma, and the motion of young stars. My work combines numerical simulations, machine learning, and large language models to further our understanding of the universe.</p>
+          <div class="links"><a href="research.html">Research</a><a href="cv.html">CV</a></div>
+        </div>
       </div>
-    </section>
-    <section class="home-section"><div class="shell"><div class="section-head"><div><h2>Featured research</h2></div><a class="button" href="research.html">All projects <span class="arrow" aria-hidden="true">→</span></a></div>
-      <div class="project-list">
-        <article><a class="project-visual" href="research.html#accretion"><img src="assets/accretion-disk.png" width="800" height="266" loading="lazy" decoding="async" alt="Visualization of an accretion flow around a black hole"></a><h3><a href="research.html#accretion">Black-hole accretion</a></h3><p>Nested zoom-in simulations of multiphase gas and jet feedback around supermassive black holes.</p></article>
-        <article><a class="project-visual" href="research.html#awesom"><img src="assets/awesom.webp" width="1600" height="1486" loading="lazy" decoding="async" alt="Current-sheet segmentation in a plasma simulation"></a><h3><a href="research.html#awesom">aweSOM</a></h3><p>Open-source software for identifying current sheets in turbulent magnetized plasma.</p></article>
-        <article><a class="project-visual" href="research.html#turbulence"><img src="assets/stellar-turbulence.webp" width="1600" height="837" loading="lazy" decoding="async" alt="Young stars in nearby star-forming regions"></a><h3><a href="research.html#turbulence">Stellar turbulence</a></h3><p>Using young stars and gas to measure turbulence in nearby star-forming regions.</p></article>
-      </div>
-    </div></section>
-    <section class="home-section" id="about"><div class="shell home-grid">
-      <img class="portrait" src="assets/portrait.webp" width="1440" height="1440" loading="lazy" decoding="async" alt="Portrait of Trung Ha">
-      <div class="bio-copy"><h2>About me</h2><p>I grew up in Ho Chi Minh City, Vietnam, and moved to the United States during high school. Outside of research, I enjoy learning about computer hardware, playing chess, watching soccer (I am a lifelong Arsenal fan), traveling, and taking photographs, including the ones you see on this site.</p></div>
-    </div></section>
-  </main>
-  <footer class="site-footer"><div class="shell"><span>Trung Ha, PhD</span><a href="mailto:vinhtrungha99@gmail.com">Email Trung <span aria-hidden="true">↗</span></a></div></footer>
-  <script src="app.js"></script>
+    </div>
+  </div>
+
+  <section id="featured"><div class="wrap">
+    <div class="section-head"><h2>Featured research</h2><a href="research.html">All projects</a></div>
+    <div class="featured">
+      <a href="research.html#accretion"><div class="frame ember"><img src="assets/accretion-disk.png" width="800" height="266" loading="lazy" alt="Visualization of an accretion flow around a black hole"></div><h3>Black-hole accretion</h3><p>Nested zoom-in simulations of multiphase gas and jet feedback around supermassive black holes.</p></a>
+      <a href="research.html#awesom"><div class="frame"><img src="assets/awesom.webp" width="1600" height="1486" loading="lazy" alt="Current-sheet segmentation in a plasma simulation"></div><h3>aweSOM</h3><p>Open-source software for identifying current sheets in turbulent magnetized plasma.</p></a>
+      <a href="research.html#turbulence"><div class="frame"><img src="assets/stellar-turbulence.webp" width="1600" height="837" loading="lazy" alt="Young stars in nearby star-forming regions"></div><h3>Stellar turbulence</h3><p>Using young stars and gas to measure turbulence in nearby star-forming regions.</p></a>
+    </div>
+  </div></section>
+</main>
+<footer class="site-foot"><div class="wrap"><span>Trung Ha, PhD</span><a href="mailto:vinhtrungha99@gmail.com">vinhtrungha99@gmail.com</a></div></footer>
+<script src="exposure.js"></script>
 </body>
 </html>

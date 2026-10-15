@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Trung Ha, PhD</title>
+<meta name="description" content="Black-hole accretion simulations, aweSOM for finding current sheets in plasma turbulence, and turbulence traced by young stars.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Trung Ha, PhD">
+<meta property="og:title" content="Research · Trung Ha, PhD">
+<meta property="og:description" content="Black-hole accretion simulations, aweSOM for finding current sheets in plasma turbulence, and turbulence traced by young stars.">
+<meta property="og:url" content="https://tvh0021.github.io/research.html">
+<meta property="og:image" content="https://tvh0021.github.io/assets/star-trails-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Star trails above a dark landscape">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=8">
+</head>
+<body>
+<header class="site-nav"><nav class="wrap" aria-label="Primary">
+  <a class="mark" href="index.html">Trung Ha</a>
+  <ul><li><a href="index.html">Home</a></li><li><a href="research.html" aria-current="page">Research</a></li><li><a href="cv.html">CV</a></li><li><a href="contact.html">Contact</a></li></ul>
+</nav></header>
+<main>
+  <div class="page-head wrap">
+    <h1>Research</h1>
+    <p>As a postdoctoral researcher, I am developing a reproducible framework that frontier LLMs can leverage to write state-of-the-art GRMHD simulations. Check back soon for more details on this project.</p>
+  </div>
+  <div class="wrap">
+    <article class="project" id="accretion">
+      <div class="text">
+        <p class="kind">Hydrodynamic simulation</p>
+        <h3>Black-hole accretion across scales</h3>
+        <p>Current galaxy simulations reproduce accretion-flow morphology at galaxy and event-horizon scales, but the dynamics between the Bondi radius and the outer edge of the accretion disk remain poorly understood. I address this gap with a suite of zoom-in hydrodynamic simulations of multiphase accretion flows and jet feedback motivated by observations of M87. These results provide boundary and initial conditions at the horizon scale for future GRMHD simulations and more accurate subgrid models for cosmological simulations.</p>
+        <div class="links"><a href="../../assets/multiscale-proj-xandz.pdf">Simulation figure (PDF)</a><a href="https://www.athena-astro.app/">Athena++</a></div>
+      </div>
+      <figure class="print ember"><a class="zoom" href="../../assets/accretion-disk.png"><img src="../../assets/accretion-disk.png" width="800" height="266" loading="lazy" alt="Gas density in a jet-feedback simulation around a supermassive black hole"></a><figcaption>Projected gas density showing an accretion disk around a supermassive black hole.</figcaption></figure>
+    </article>
+    <article class="project" id="awesom">
+      <div class="text">
+        <p class="kind">Machine learning and open-source software</p>
+        <h3>Finding current sheets with aweSOM</h3>
+        <p>Magnetohydrodynamic turbulence is common throughout the universe. In strongly magnetized regions, intermittency forms current sheets. These sheets can undergo tearing-mode instability, driving magnetic reconnection, which contributes to plasma heating and non-thermal particle acceleration. As a predoctoral fellow at the Simons Foundation, I developed aweSOM to segment and track current sheets in three-dimensional plasma simulations with self-organizing maps. In test cases, aweSOM effectively segments current sheets across simulation snapshots.</p>
+        <div class="links"><a href="https://github.com/tvh0021/aweSOM">Code on GitHub</a><a href="https://iopscience.iop.org/article/10.3847/2041-8213/add47b">ApJ Letters paper</a><a href="https://joss.theoj.org/papers/10.21105/joss.07613">JOSS paper</a></div>
+      </div>
+      <figure class="print"><a class="zoom" href="../../assets/awesom.webp"><img src="../../assets/awesom.webp" width="1600" height="1486" loading="lazy" alt="Current density in a plasma simulation and the clusters aweSOM assigns to current sheets"></a><figcaption>Current density in a particle-in-cell simulation, and the current sheets aweSOM identifies.</figcaption></figure>
+    </article>
+    <article class="project" id="turbulence">
+      <div class="text">
+        <p class="kind">Observations and inference</p>
+        <h3>Turbulence traced by young stars</h3>
+        <p>Stars form in the turbulent molecular gas of the interstellar medium. After they form, they decouple from the surrounding gas but retain their prenatal kinematics. Using Gaia astrometry and APOGEE-2, I calculated velocity structure functions for young stars in four nearby star-forming regions and compared them with those of Hα and CO gas. I found a common turbulence scaling across the four regions, along with evidence of local supernova energy injection in Orion and Ophiuchus.</p>
+        <div class="links"><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac76bf">2022 paper</a><a href="https://iopscience.iop.org/article/10.3847/2041-8213/abd8c9">2021 paper</a><a href="https://www.youtube.com/watch?v=MugMF6rlCkE">AAS interview</a></div>
+      </div>
+      <figure class="print"><a class="zoom" href="../../assets/stellar-turbulence.webp"><img src="../../assets/stellar-turbulence.webp" width="1600" height="837" loading="lazy" alt="Young-star velocities over Hα maps of Orion, Ophiuchus, and Perseus-Taurus"></a><figcaption>Foreground: young stars, background: Hα emission in Orion, Ophiuchus, and Perseus-Taurus.</figcaption></figure>
+    </article>
+  </div>
+  <section><div class="wrap">
+    <h2>Earlier work</h2>
+    <div class="others">
+      <article><a class="zoom" href="../../assets/weak-line-quasars.webp"><img class="thumb" src="../../assets/weak-line-quasars.webp" width="1400" height="945" loading="lazy" alt="C IV distance against Eddington ratio for quasars"></a><h3>Weak-line quasars</h3><p>Weak-line quasars are a subset of luminous active galactic nuclei whose spectra show unusually weak Lyα + N V λ1240 emission, C IV λ1549 emission, or both. My work presented evidence pointing to a high-dimensional correlation between quasar C IV spectral properties and accretion rate, effectively uniting the WLQ subset with the wider Type 1 quasar population.</p><a href="https://iopscience.iop.org/article/10.3847/1538-4357/acd04d">Read the paper</a></article>
+      <article><a class="zoom" href="../../assets/neural-style-transfer.webp"><img class="thumb" src="../../assets/neural-style-transfer.webp" width="1800" height="574" loading="lazy" alt="Milky Way Hα map processed with neural style transfer"></a><h3>Neural style transfer</h3><p>I helped M.S. students in the AI summer program at UNT apply the pretrained VGG-19 network to Milky Way maps from the Wisconsin H-Alpha Mapper survey. Using the Orion Molecular Cloud Complex as a reference, neural style transfer identified other star-forming regions in the Milky Way. The method offers a quick way to identify targets for future sky surveys.</p><a href="../../assets/neuralstyletransfer_pres.pdf">Poster (PDF)</a></article>
+      <article><a class="zoom" href="../../assets/binary-neutron-stars.JPG"><img class="thumb" src="../../assets/binary-neutron-stars.JPG" width="1195" height="1193" loading="lazy" alt="Binary neutron star simulation"></a><h3>Binary neutron stars</h3><p>As an undergraduate research student at RIT's Center for Computational Relativity and Gravitation from 2018 to 2020, I modified and documented the LORENE initial-data code to generate physically motivated binary neutron stars before merger. I also ran GRMHD simulations of BNS mergers with the Einstein Toolkit and presented the results at the 2019 Midwest Relativity Meeting.</p><a href="../../assets/bns_pres.pdf">Presentation (PDF)</a></article>
+    </div>
+  </div></section>
+</main>
+<dialog class="lightbox" aria-label="Full-size figure"><button type="button" class="close">Close</button><img alt=""></dialog>
+<script src="lightbox.js"></script>
+<footer class="site-foot"><div class="wrap"><span>Trung Ha, PhD</span><a href="mailto:vinhtrungha99@gmail.com">vinhtrungha99@gmail.com</a></div></footer>
+</body>
+</html>

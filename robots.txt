@@ -2,4 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /contact.html
 Disallow: /cv.html
+Disallow: /assets/CV_TrungHa_1026b.pdf
 Sitemap: https://tvh0021.github.io/sitemap.xml

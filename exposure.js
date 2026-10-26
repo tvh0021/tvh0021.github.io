@@ -10,6 +10,12 @@
   const DURATION = 5200;            // ms for the trails to reach full length
   const POS = { x: 0.5, y: 0.58 };  // must match object-position in style.css
   let data, map;
+  // The extractor's 15 px line filter runs its mask past each trail's real end, and round caps add half
+  // a line width more. Measured against the photo, the finished trails overshot by a median 4.5 px per
+  // end: 3.7 px from the measured endpoints, the rest from the caps. Pull each end in by both. Glowing
+  // trails (peak > 60) overshot about 3 px more, from their shadow and a longer filter response.
+  const TRIM = 3.7, GLOW_TRIM = 3;
+  const width = core => Math.max(0.9, Math.min(core * 0.7, 3.5));
 
   function layout() {
     const dpr = Math.min(devicePixelRatio || 1, 2);
@@ -29,7 +35,7 @@
       // trails grow from their lower-left end toward the upper right
       const ex = bx + (ax - bx) * t, ey = by + (ay - by) * t;
       ctx.strokeStyle = `rgb(${r},${g},${b})`;
-      ctx.lineWidth = Math.max(0.9, Math.min(core * 0.7, 3.5));
+      ctx.lineWidth = width(core);
       ctx.shadowColor = peak > 60 ? `rgba(${r},${g},${b},.8)` : 'transparent';
       ctx.shadowBlur = peak > 60 ? 2.5 * s * dpr : 0;
       ctx.beginPath(); ctx.moveTo(bx, by); ctx.lineTo(ex, ey); ctx.stroke();
@@ -40,6 +46,14 @@
 
   async function start() {
     data = await (await fetch(hero.dataset.trails)).json();
+    for (const seg of data.segs) {
+      const [ax, ay, bx, by, , peak, core] = seg;
+      const len = Math.hypot(bx - ax, by - ay);
+      const trim = TRIM + width(core) / 2 + (peak > 60 ? GLOW_TRIM : 0);
+      const k = Math.min(trim, len * 0.4) / len;  // at most 40% per end, so no trail inverts
+      const dx = (bx - ax) * k, dy = (by - ay) * k;
+      seg[0] = ax + dx; seg[1] = ay + dy; seg[2] = bx - dx; seg[3] = by - dy;
+    }
     data.segs.sort((p, q) => p[5] - q[5]);  // faint trails first, bright ones on top
     layout();
     if (still) { draw(1); develop(); return; }

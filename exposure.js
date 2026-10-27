@@ -10,11 +10,8 @@
   const DURATION = 5200;            // ms for the trails to reach full length
   const POS = { x: 0.5, y: 0.58 };  // must match object-position in style.css
   let data, map;
-  // The extractor's 15 px line filter runs its mask past each trail's real end, and round caps add half
-  // a line width more. Measured against the photo, the finished trails overshot by a median 4.5 px per
-  // end: 3.7 px from the measured endpoints, the rest from the caps. Pull each end in by both. Glowing
-  // trails (peak > 60) overshot about 3 px more, from their shadow and a longer filter response.
-  const TRIM = 3.7, GLOW_TRIM = 3;
+  // trails.json holds where each trail ends in the photo (tools/refine-trails.py); round caps reach half a
+  // line width past that, so pull each end in by it.
   const width = core => Math.max(0.9, Math.min(core * 0.7, 3.5));
 
   function layout() {
@@ -47,10 +44,9 @@
   async function start() {
     data = await (await fetch(hero.dataset.trails)).json();
     for (const seg of data.segs) {
-      const [ax, ay, bx, by, , peak, core] = seg;
+      const [ax, ay, bx, by, , , core] = seg;
       const len = Math.hypot(bx - ax, by - ay);
-      const trim = TRIM + width(core) / 2 + (peak > 60 ? GLOW_TRIM : 0);
-      const k = Math.min(trim, len * 0.4) / len;  // at most 40% per end, so no trail inverts
+      const k = Math.min(width(core) / 2, len * 0.4) / len;  // at most 40% per end, so no trail inverts
       const dx = (bx - ax) * k, dy = (by - ay) * k;
       seg[0] = ax + dx; seg[1] = ay + dy; seg[2] = bx - dx; seg[3] = by - dy;
     }
